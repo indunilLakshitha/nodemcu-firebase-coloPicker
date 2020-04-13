@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "277979195982",
+    "firebase_url": "https://rgbdata-8cf93.firebaseio.com",
+    "project_id": "rgbdata-8cf93",
+    "storage_bucket": "rgbdata-8cf93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277979195982:android:a8a35a5def3686b5fff11f",
+        "android_client_info": {
+          "package_name": "com.hasitha.nodemcu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277979195982-ecpgutbo8jbs6nat1l6r545uanmsglqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL90YYNZzY3yYWy9pbti3xy706GLeTPkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277979195982-ecpgutbo8jbs6nat1l6r545uanmsglqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveActivity"
+    android:background="@mipmap/a">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/lblColor"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/lblErr"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:textColor="@color/error"/>
+
+    <EditText
+        android:layout_width="300dp"
+
+        android:layout_height="40dp"
+        android:id="@+id/txtColorNamr"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtR"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="300dp"
+        android:text="255"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtG"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="360dp"
+        android:text="105"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtB"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="420dp"
+        android:text="180"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnSave"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="50dp"
+        android:text="SAVE"
+        />
+
+
+</RelativeLayout>
