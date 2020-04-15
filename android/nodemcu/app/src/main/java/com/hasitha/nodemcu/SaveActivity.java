@@ -55,7 +55,7 @@ DB Db;
                 if(colorName.getText().toString().equals("")){
                     er.setText("Please Enter A Color Name");
                 }else {
-                    String c=er.getText().toString();
+                    String c=colorName.getText().toString();
                     saveColor(c);
                 }
             }
@@ -83,8 +83,8 @@ DB Db;
                  contentValues.put("Red",red);
                  contentValues.put("Green",green);
                  contentValues.put("Blue",blue);
-                long checkIfWueryRuns= sq.insert("Color_DB",null,contentValues);
-                if(checkIfWueryRuns!=-1){
+                long checkIfQueryRuns= sq.insert("Color_DB",null,contentValues);
+                if(checkIfQueryRuns!=-1){
                     Toast.makeText(SaveActivity.this,"Values Inserted",Toast.LENGTH_LONG).show();
 
                 }

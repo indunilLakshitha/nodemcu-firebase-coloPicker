@@ -2,4 +2,7 @@
     <string name="app_name">nodemcu</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="about">This app was created to find and view color codes
+                         in anywhere.
+    this was builded with Node MCU support</string>
 </resources>

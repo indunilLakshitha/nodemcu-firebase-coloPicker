@@ -1,20 +1,38 @@
 package com.hasitha.nodemcu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class HistoryActivity extends AppCompatActivity {
-RecyclerView his;
+
+    DB Db;
+    Button history;
+    RecyclerViewAdapter recyclerViewAdapter;
+    RecyclerView recyclerView;
+    ArrayList<ModelClass> modelClassArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-        his =(RecyclerView)findViewById(R.id.showHistory);
+        modelClassArrayList=new ArrayList<>();
+        recyclerView =(RecyclerView)findViewById(R.id.rcyclrView);
+        history=(Button)findViewById(R.id.btnGetHistory);
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showHistory();
+            }
+        });
 
     }
 
@@ -32,14 +50,17 @@ RecyclerView his;
                 else {
                     while (cursor.moveToNext())
                     {
-                        stringBuffer.append("ID: "+cursor.getInt(0)+"\n");
-                        stringBuffer.append("Name: "+cursor.getString(1)+"\n");
-                        stringBuffer.append("Red: "+cursor.getString(2)+"\n");
-                        stringBuffer.append("Green: "+cursor.getString(3)+"\n");
-                        stringBuffer.append("Blue: "+cursor.getString(4)+"\n");
+                        modelClassArrayList.add(new ModelClass(cursor.getInt(0),
+                                cursor.getString(1),
+                                cursor.getString(2),
+                                cursor.getString(3),
+                                cursor.getString(4)
+                        ));
                     }
-
-
+                    recyclerViewAdapter=new RecyclerViewAdapter((modelClassArrayList));
+                    recyclerView.hasFixedSize();
+                    recyclerView.setLayoutManager(new LinearLayoutManager(HistoryActivity.this));
+                    recyclerView.setAdapter(recyclerViewAdapter);
                 }
             }
             else {

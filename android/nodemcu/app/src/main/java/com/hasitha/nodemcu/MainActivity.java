@@ -80,6 +80,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             startActivity(intent);
         }
+   if(menuItem.getItemId() == R.id.appInfo){
+            Intent intent = new Intent(MainActivity.this, AppInfoActivity.class);
+
+            startActivity(intent);
+        }
 
         return true;
     }
