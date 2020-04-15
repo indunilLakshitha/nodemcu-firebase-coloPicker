@@ -4,10 +4,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="5dp"
     android:layout_height="wrap_content"
-    android:background="@drawable/rect"
     android:layout_marginLeft="5dp"
     android:layout_marginTop="5dp"
     app:layout_goneMarginLeft="5dp">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    app:cardCornerRadius="20dp"
+
+    >
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect">
+
 
 
     <TextView
@@ -22,16 +34,17 @@
         android:textSize="20sp"
 
         />
- <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Mobile"
-        android:id="@+id/tR"
-        android:layout_below="@id/tName"
-     android:paddingLeft="7dp"
-     android:textSize="20sp"
-        />
- <TextView
+
+    <TextView
+           android:id="@+id/tR"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tName"
+           android:hint="Mobile"
+        android:paddingLeft="7dp"
+        android:textSize="20sp" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -66,5 +79,8 @@
 
         android:hint="Id"
         android:padding="10dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
