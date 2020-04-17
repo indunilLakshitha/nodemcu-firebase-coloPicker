@@ -13,22 +13,22 @@
         android:id="@+id/fragment_container"
         >
 
-<androidx.cardview.widget.CardView
-    android:layout_width="300dp"
-    android:layout_height="200dp"
-    android:layout_marginTop="100dp"
-    android:layout_marginLeft="50dp"
-    app:cardCornerRadius="20dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp"
+            app:cardCornerRadius="20dp"
 
 
-    >
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/btnSearch"
-        android:background="@mipmap/se"
-        />
-</androidx.cardview.widget.CardView>
+            >
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/btnSearch"
+                android:background="@mipmap/se"
+                />
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
             android:layout_height="200dp"
@@ -37,18 +37,18 @@
             app:cardCornerRadius="20dp"
 
             >
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/btnHistory"
-        android:background="@mipmap/his"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/btnHistory"
+                android:background="@mipmap/his"/>
 
 
-</androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </FrameLayout>
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout
-   >
+    >
