@@ -1,38 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HistoryActivity">
-<TextView
-    android:layout_width="300dp"
-    android:layout_height="30dp"
-    android:layout_marginTop="10dp"
-    android:background="@drawable/rect"
-    android:text="See Your Saved Colores"
-    android:layout_marginLeft="50dp"
-    android:textStyle="bold"
-    android:gravity="center"
-    />
+    tools:context=".HistoryActivity"
+
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rect"
+        android:gravity="center"
+        android:text="See Your Saved Colores"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rcyclrView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
 
     <Button
         android:id="@+id/btnGetHistory"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_below="@id/rcyclrView"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="25dp"
+        android:background="@drawable/rect"
         android:text="VIEW"
-        android:background="@drawable/rect"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcyclrView"
+        app:layout_constraintVertical_bias="0.865" />
 
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/rcyclrView"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_marginTop="50dp" />
+        android:layout_width="328dp"
+        android:layout_height="561dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
